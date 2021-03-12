@@ -71,7 +71,6 @@ endif
 endif
 endif
 
-
 BINDIR = $(BUILDDIR_ABSOLUTE)/bins
 OBJDIR = $(BUILDDIR_ABSOLUTE)/objs
 LIBDIR = $(BUILDDIR_ABSOLUTE)/libs
@@ -634,6 +633,7 @@ endif
 
 ifeq ($(DEP_MISSING),)
 all: static shared
+    @echo "DEBUG: $(BUILDDIR_ABSOLUTE)"
 dep_error:
 	@echo "You shouldn't see this message - all of your dependencies are correct."
 else
