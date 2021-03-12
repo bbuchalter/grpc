@@ -445,8 +445,6 @@ ARFLAGS += $(GRPC_CROSS_AROPTS) # e.g., rc --target=elf32-little
 USE_BUILT_PROTOC = false
 endif
 
-@echo "YOU ARE HERE"
-
 # V=1 can be used to print commands run by make
 # ifeq ($(V),1)
 E = @:
